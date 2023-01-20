@@ -3,11 +3,11 @@ import './App.css';
 import ColorBlock from './Component/ColorBlock';
 
 function App() {
-  let colors = ['green', 'red', 'yellow']
-  let colorMap = colors.map((color)=>{
+  let colors = ['green', 'red', 'orange', 'yellow', 'blue', 'purple']
+  let colorMap = colors.map((color, i)=>{
     return(
-      // This needs a key for unique?
-      <ColorBlock color = {color}/>
+      // This needs a key 
+      <ColorBlock key= {i} color = {color}  />
     )
   })
   return (
