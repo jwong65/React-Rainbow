@@ -8,3 +8,4 @@ function ColorBlock(property){
         </div>
     )
 }
+export default ColorBlock
