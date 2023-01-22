@@ -12,10 +12,13 @@ function App() {
       <ColorBlock key= {i} color = {color}  />
     )
   })
+  let addColor = (newColor)=>{
+    setColor([colors, newColor])
+  }
   return (
     <>
       {colorMap}
-      {ColorForm}
+      <ColorForm addColor={addColor}/>
     </>
 
   );
