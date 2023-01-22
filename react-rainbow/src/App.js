@@ -5,7 +5,8 @@ import ColorBlock from './Component/ColorBlock';
 import ColorForm from './Component/ColorForm';
 
 function App() {
-  let colors = ['green', 'red', 'orange', 'yellow', 'blue', 'purple']
+  //Change the array into a useState so the default is added with the setColor to add additional colors
+  let [colors, setColor] = useState(['red', 'green', 'yellow'])
   let colorMap = colors.map((color, i)=>{
     return(
       // This needs a key 
@@ -13,7 +14,7 @@ function App() {
     )
   })
   let addColor = (newColor)=>{
-    setColor([colors, newColor])
+    setColor([...colors, newColor])
   }
   return (
     <>
