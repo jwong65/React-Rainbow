@@ -2,6 +2,7 @@
 import './App.css';
 import React, { useState } from 'react'
 import ColorBlock from './Component/ColorBlock';
+import ColorForm from './Component/ColorForm';
 
 function App() {
   let colors = ['green', 'red', 'orange', 'yellow', 'blue', 'purple']
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       {colorMap}
+      {ColorForm}
     </>
 
   );
